@@ -1,0 +1,47 @@
+/* Each festival keeps a permanent, shareable record. */
+.archive-page .archive-container { max-width:1000px; }
+.archive-home { display:inline-flex; align-items:center; gap:12px; min-height:44px; font-size:.84rem; color:var(--navy); }
+.archive-home:hover,.archive-breadcrumb a:hover,.archive-back:hover { text-decoration:underline; text-underline-offset:5px; }
+.archive-breadcrumb { display:flex; flex-wrap:wrap; align-items:center; gap:12px; padding-top:118px; color:var(--muted); font-size:.76rem; }
+.archive-breadcrumb [aria-current] { color:var(--navy); }
+.archive-hero { padding:40px 0; }
+.archive-hero>.label { margin-bottom:26px; }
+.archive-hero .round-meta { margin-bottom:20px; }
+.archive-hero h1 { max-width:830px; font-size:clamp(2rem,4vw,3.15rem); line-height:1.4; letter-spacing:-.045em; color:var(--navy); font-weight:650; overflow-wrap:break-word; }
+.archive-lead { max-width:780px; margin-top:28px; color:var(--muted); font-size:1rem; line-height:1.95; }
+.archive-section { padding:60px 0; border-bottom:1px solid var(--line); scroll-margin-top:20px; }
+.archive-section>.label { font-size:.68rem; }
+.archive-section h2 { color:var(--navy); font-size:1.6rem; font-weight:600; line-height:1.4; letter-spacing:-.03em; }
+.archive-prose { max-width:780px; margin-top:26px; color:var(--muted); font-size:.97rem; line-height:2; }
+.archive-prose p+p { margin-top:20px; }
+.award-work { margin-top:28px; padding-left:24px; border-left:2px solid var(--gold); }
+.award-category { font-size:.77rem; font-weight:650; color:var(--blue); margin-bottom:10px; }
+.award-work h3 { color:var(--navy); font-size:1.25rem; font-weight:600; line-height:1.55; overflow-wrap:anywhere; }
+.award-team { margin-top:8px; color:var(--muted); font-size:.88rem; }
+.award-description { max-width:750px; margin-top:18px; color:var(--muted); font-size:.93rem; line-height:1.95; }
+.award-source { margin-top:20px; color:var(--muted); font-size:.73rem; }
+.submission-source { margin-top:18px; color:var(--muted); font-size:.73rem; }
+.archive-placeholder { margin-top:25px; color:var(--muted); font-size:.9rem; line-height:1.9; }
+.archive-editions { margin-top:28px; }
+.archive-editions>p { margin-bottom:12px; color:var(--muted); font-size:.76rem; }
+.archive-editions>div { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; }
+.archive-editions a { display:flex; align-items:center; justify-content:center; min-height:48px; padding:8px; border:1px solid var(--line); border-radius:3px; color:var(--muted); font-size:.9rem; }
+.archive-editions a[aria-current] { border-color:var(--navy); border-bottom:2px solid var(--gold); color:var(--navy); font-weight:650; }
+.archive-editions a:hover { border-color:var(--navy); color:var(--navy); }
+.archive-back { display:inline-flex; align-items:center; gap:14px; min-height:44px; margin:24px 0 64px; color:var(--blue); font-size:.85rem; }
+@media (max-width:760px) {
+  .archive-home { font-size:.8rem; }
+  .archive-breadcrumb { padding-top:96px; font-size:.72rem; }
+  .archive-editions { margin-top:22px; }
+  .archive-editions>div { gap:8px; }
+  .archive-hero { padding:36px 0 30px; }
+  .archive-hero>.label { margin-bottom:22px; }
+  .archive-hero h1 { font-size:1.95rem; line-height:1.45; }
+  .archive-lead { font-size:.91rem; margin-top:23px; }
+  .archive-section { padding-block:42px; }
+  .archive-section h2 { font-size:1.45rem; }
+  .archive-prose { font-size:.91rem; }
+  .archive-placeholder,.award-description { font-size:.88rem; }
+  .award-work { padding-left:18px; }
+  .archive-back { margin-bottom:44px; }
+}

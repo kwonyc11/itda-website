@@ -1,0 +1,5 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["app/**/*.ts", "app/**/*.tsx", "lib/cms.ts", "lib/render.ts", "db/**/*.ts", "cloudflare-env.d.ts", "vite-env.d.ts"],
+  "exclude": ["node_modules", "examples", "dist", ".vinext", ".wrangler", ".sites-runtime", "outputs", "work"]
+}

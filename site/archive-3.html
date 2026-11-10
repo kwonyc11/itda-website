@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>제3회 연합 학술제 | ITDA</title>
+  <meta name="description" content="상품 뒷면 이미지에서 소비기한 정보를 추출하는 OCR 아키텍처를 설계하는 과제입니다. 인식 정확도와 CPU 처리 속도·운영 비용을 고려하고, 실제 도메인에서의 활용을 기획하는 데 초점을 맞췄습니다.">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:title" content="제3회 연합 학술제 — OCR 기반 상품 소비기한 정보 추출 아키텍처 설계 및 도메인 활용 기획 | ITDA">
+  <meta property="og:description" content="상품 뒷면 이미지에서 소비기한 정보를 추출하는 OCR 아키텍처를 설계하는 과제입니다. 인식 정확도와 CPU 처리 속도·운영 비용을 고려하고, 실제 도메인에서의 활용을 기획하는 데 초점을 맞췄습니다.">
+  <meta property="og:url" content="https://itda-academy.kwonyc5820.chatgpt.site/archive/3/">
+  <meta property="og:image" content="https://itda-academy.kwonyc5820.chatgpt.site/assets/logo.png">
+  <meta property="og:image:width" content="674">
+  <meta property="og:image:height" content="385">
+  <meta property="og:image:alt" content="ITDA | 수도권 데이터사이언스 학회 연합">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://itda-academy.kwonyc5820.chatgpt.site/archive/3/">
+  <link rel="icon" type="image/png" href="/assets/logo.png">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link rel="stylesheet" href="/style.css?v=20261028-noart1">
+  <link rel="stylesheet" href="/archive.css?v=20261028-noart1">
+<link rel="stylesheet" href="/cms.css?v=20261103-1">
+</head>
+<body class="archive-page">
+  <a class="skip-link" href="#main">본문으로 바로 가기</a>
+  <header class="nav"><div class="container nav-inner"><a href="/" class="logo" aria-label="ITDA 홈페이지"><img src="/assets/logo.png" alt="ITDA" width="68" height="39"></a><a class="archive-home" href="/#festival-3"><span aria-hidden="true">←</span> 역대 학술제</a></div></header>
+  <main id="main">
+    <div class="container archive-container">
+      <nav class="archive-breadcrumb" aria-label="현재 위치"><a href="/">ITDA</a><span aria-hidden="true">/</span><a href="/#archive">학술제</a><span aria-hidden="true">/</span><span aria-current="page">제3회</span></nav>
+      <nav class="archive-editions" aria-label="학술제 회차"><p>학술제 회차 선택</p><div><a href="/archive/1/">제1회</a><a href="/archive/2/">제2회</a><a href="/archive/3/" aria-current="page">제3회</a></div></nav>
+      <header class="archive-hero">
+        <p class="label">ITDA Academic Festival · 03</p>
+        <p class="round-meta"><span>제3회 · <time datetime="2026-10-03">2026.10.03</time></span><span class="round-partner">OCR · Architecture</span></p>
+        <h1>OCR 기반 상품 소비기한 정보 추출<br class="desktop-break"> 아키텍처 설계 및 도메인 활용 기획</h1>
+        <p class="archive-lead">상품 뒷면 이미지에서 소비기한 정보를 추출하는 OCR 아키텍처를 설계하는 과제입니다. 인식 정확도와 CPU 처리 속도·운영 비용을 고려하고, 실제 도메인에서의 활용을 기획하는 데 초점을 맞췄습니다.</p>
+        <ul class="project-tags" aria-label="프로젝트 키워드"><li>OCR</li><li>Architecture</li><li>Domain Application</li></ul>
+      </header>
+      <section class="archive-section" id="project" aria-labelledby="project-title"><h2 id="project-title">프로젝트 소개</h2><div class="archive-prose"><p>제3회 연합 학술제에서는 상품 뒷면 이미지에서 소비기한 정보를 추출하는 OCR 아키텍처를 설계하고, 이를 실제 도메인에 활용할 방법을 기획했습니다. 다양한 문구와 날짜 표기가 섞인 이미지에서 필요한 정보를 찾아내는 문제를 다뤘습니다.</p><p>기획 자료에서는 정답 라벨이 없는 상품 뒷면 사진 3,352장을 제공 데이터로 안내했습니다. 인식 정확도뿐 아니라 CPU 환경에서의 처리 속도와 운영 비용도 검토해, 실제로 활용할 수 있는 처리 구조를 설계하는 것이 과제에 포함됐습니다.</p></div></section>
+      <section class="archive-section" id="submissions" aria-labelledby="submissions-title">
+        <h2 id="submissions-title">설계와 활용 방향</h2>
+        <div class="archive-prose">
+          <p>제출자료에는 날짜가 있는 영역만 골라 문자를 읽고, 상품번호를 날짜로 잘못 인식하지 않도록 규칙을 적용하는 방식이 담겼습니다. 인식에 실패한 경우에만 회전·명암 보정이나 추가 인식을 수행하거나, OCR과 날짜 해석을 분리해 모델을 바꿔도 규칙을 재사용할 수 있도록 구성하는 등 다양한 접근을 다뤘습니다.</p>
+          <p>활용 방안으로는 식품 입고·발송 시 소비기한 확인, 의약품 유효기간 관리, 재고 등록과 임박 알림 등을 제안했습니다. 추출 정확도와 함께 GPU 없는 CPU·오프라인 환경에서의 처리 시간과 운영 비용도 고려했습니다.</p>
+        </div>
+        <p class="submission-source">예선 아키텍처 제출자료를 종합한 요약</p>
+      </section>
+      <!--POST_AWARD-->
+      <!--POST_INTERVIEW-->
+      <!--POST_GUIDE-->
+      <!--STORIES--><a class="archive-back" href="/#festival-3"><span aria-hidden="true">←</span> 역대 학술제로 돌아가기</a>
+    </div>
+  </main>
+  <footer class="footer"><div class="container footer-inner"><a href="/" aria-label="ITDA 홈페이지"><img class="footer-logo" src="/assets/logo.png" alt="ITDA" width="52" height="31"></a><p>경희대 CODE · 한국외대 DAT · 성균관대 DScover<br class="mobile-break"> · 인하대 IBAS · 서강대 INSIGHT</p><a class="operator-link" href="/admin/">운영진</a><a class="back-top" href="#main">맨 위로 <span aria-hidden="true">↑</span></a></div></footer>
+</body>
+</html>
