@@ -14,7 +14,7 @@
 
 ## 로컬에서 실행
 
-Node.js 22.13 이상, npm, Git이 필요합니다. 저장소를 읽을 수 있는 GitHub 계정으로 아래 명령을 실행합니다.
+Node.js 22.13 이상, npm, Git을 설치하고 아래 명령으로 소스를 내려받아 빌드합니다.
 
 ```sh
 git clone https://github.com/kwonyc11/itda-website.git
@@ -56,6 +56,6 @@ GitHub에 push한 뒤 온라인에 반영하려면 3단계의 Sites 배포가 �
 
 ## 다음 운영진에게 넘길 때
 
-- **소스 관리** — 다음 담당자에게 이 비공개 저장소의 협업 권한을 부여합니다. ITDA GitHub 조직으로 소유권을 옮길 때에는 원래 저장소 관리자 권한과 대상 조직에서 저장소를 만들 권한이 필요합니다. [GitHub의 저장소 이전 안내](https://docs.github.com/en/repositories/creating-and-managing-repositories/transferring-a-repository)
+- **소스 관리** — 다음 담당자의 GitHub 계정에 이 저장소의 쓰기 권한을 부여합니다. ITDA GitHub 조직으로 소유권을 옮길 때에는 원래 저장소 관리자 권한과 대상 조직에서 저장소를 만들 권한이 필요합니다. [GitHub의 저장소 이전 안내](https://docs.github.com/en/repositories/creating-and-managing-repositories/transferring-a-repository)
 - **배포 관리** — 다음 담당자가 기존 ITDA Sites 프로젝트를 열고 버전과 배포 상태를 확인할 수 있도록 프로젝트 접근 권한을 인계합니다.
 - **글 관리** — 현재 관리자가 다음 운영진의 계정을 초대하고 새 계정으로 초안 저장을 확인합니다. 최초 관리자는 Sites 비밀 환경변수 `ITDA_OWNER_EMAIL`로 한 번 연결되고, 연결 이후에는 D1에 기록된 사용자 ID로 판별됩니다. 현재 관리 화면에는 최초 관리자 자체를 교체하는 기능이 없어, 소유자가 바뀔 때는 이 권한도 별도로 확인해야 합니다.
